@@ -1,0 +1,119 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --light-gray: hsl(227, 10%, 90%);
+}
+
+body {
+  margin: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--dark-cyan);
+  height: 100vh;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+h1,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.card {
+  max-width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315);
+  background-color: #fff;
+}
+
+.fondo img{
+  background-color: #fff;
+}
+
+.card__body {
+  background-color: #fff;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  text-align: center;
+  /* background-color: #fff; */
+}
+
+.card__header {
+  display: flex;
+  gap: 0.7rem;
+  flex-direction: column;
+  /* justify-content: center; */
+  position: relative;
+  padding-top: 80px;
+}
+
+.card__profile-img {
+  align-self: center;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  background-color: white;
+  position: absolute;
+  top: -55px;
+}
+
+.card__title,
+.card__stats p {
+  color: var(--very-dark-desaturated-blue);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card__title span,
+.card__location,
+.card__stats span {
+  font-weight: 400;
+  color: var(--dark-gray);
+}
+
+.card__title span {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.card__location {
+  font-size: 15px;
+}
+
+.card__stats {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  padding: 1.5rem;
+  border-top: 1px solid var(--light-gray);
+}
+
+.card__stats span {
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 4px;
+  letter-spacing: 1.2px;
+}
