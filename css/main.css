@@ -47,7 +47,7 @@ ul {
   background-color: #fff;
 }
 
-.fondo img{
+.fondo img {
   background-color: #fff;
 }
 
@@ -56,28 +56,22 @@ ul {
   display: flex;
   gap: 1.5rem;
   flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: center; */
   text-align: center;
-  /* background-color: #fff; */
 }
 
 .card__header {
   display: flex;
   gap: 0.7rem;
   flex-direction: column;
-  /* justify-content: center; */
-  position: relative;
-  padding-top: 80px;
 }
 
 .card__profile-img {
   align-self: center;
   border-radius: 50%;
   border: 5px solid #fff;
+  margin-top: -55px;
   background-color: white;
-  position: absolute;
-  top: -55px;
+  padding: 0.01px;
 }
 
 .card__title,
